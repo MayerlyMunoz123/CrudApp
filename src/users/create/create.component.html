@@ -1,0 +1,14 @@
+<h1>Crear un nuevo usuario</h1>
+<form action="">
+  <div class="flex flex-column gap-2 mb-4">
+    <label for="username">Nombre del usuario</label>
+    <input name="name"[(ngModel)]="usuario.name"pInputText />
+    <small id="username-help"> Ingresa el nombre del usuario </small>
+  </div>
+  <div class="flex flex-column gap-2 mb-4">
+    <label for="username">Email del usuario</label>
+    <input name="email" [(ngModel)]="usuario.email" pInputText />
+    <small id="username-help"> Ingresa el email del usuario </small>
+  </div>
+  <p-button (click)="createUsuario()"label="Guardar" severity="success" class="mt-4" />
+</form>

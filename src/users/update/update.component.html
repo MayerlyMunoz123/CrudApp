@@ -1,0 +1,27 @@
+<h1>Actualizar producto {{ usuario.name }}</h1>
+<form action="" (ngSubmit)="updateUsuario()">
+  <div class="flex flex-column gap-2 mb-4">
+    <label for="username">Nombre del usuario</label>
+    <input
+      pInputText
+      [(ngModel)]="usuario.name"
+      name="name"
+    />
+    <small id="username-help"> Ingresa el nombre del usuario </small>
+  </div>
+  <div class="flex flex-column gap-2 mb-4">
+    <label for="username">Email del usuario</label>
+    <input
+      pInputText
+      [(ngModel)]="usuario.email"
+      name="email"
+    />
+    <small id="username-help"> Ingresa el email del usuario </small>
+  </div>
+  <button (click)="updateUsuario"
+    pButton
+    class="cursor-pointer border-round text-white bg-teal-800 text-xl p-3 w-11rem font-semibold align border-transparent justify-content-center"
+  >
+    Guardar
+  </button>
+</form>
