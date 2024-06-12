@@ -14,7 +14,8 @@ export class CreateComponent {
   createUsuario(){
     const usuario=this.usuario
     console.log (usuario)
-    return this.databaseService.createUsuario(usuario).subscribe()
-
+    return this.databaseService.createUsuario(usuario).subscribe((response)=>{
+      alert('Usuario creado correctamente')
+    });
   }
 }

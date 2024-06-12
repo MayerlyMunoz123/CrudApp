@@ -24,7 +24,10 @@ constructor(private databaseservice:DatabaseService){}
 )
   }
   deleteUsuario(id_usuario: number) {
-    return this.databaseservice.deleteUsuario(id_usuario).subscribe()
-  }
+    return this.databaseservice.deleteUsuario(id_usuario).subscribe((response) => {
+        alert('Usuario eliminado correctamente');
+        location.reload(); 
+    });
+}
 }
 

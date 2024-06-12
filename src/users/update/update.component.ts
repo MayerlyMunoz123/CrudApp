@@ -33,7 +33,7 @@ export class UpdateComponent implements OnInit {
     const usuario = this.usuario;
     console.log(id, usuario)
     return this.databaseService.updateUsuario(id, usuario).subscribe((response)=>{
-      alert('Usuario creado correctamente')
+      alert('Usuario actualizado correctamente')
     });
   }
 }

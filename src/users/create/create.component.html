@@ -7,7 +7,7 @@
   </div>
   <div class="flex flex-column gap-2 mb-4">
     <label for="username">Email del usuario</label>
-    <input name="email" [(ngModel)]="usuario.email" pInputText />
+    <input type="email" name="email" [(ngModel)]="usuario.email" pInputText />
     <small id="username-help"> Ingresa el email del usuario </small>
   </div>
   <p-button (click)="createUsuario()"label="Guardar" severity="success" class="mt-4" />
